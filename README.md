@@ -1,5 +1,5 @@
 <h1 align="center">Pokedex</p>
-<img align="center" src="https://i.ibb.co/TYT17DQ/dd.png" width="700px">
+<img align="center" src="https://i.ibb.co/4MGBhT3/fghhg.png" width="700px">
 
 ## 💻 Tecnologias
 
