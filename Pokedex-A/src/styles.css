@@ -9,8 +9,8 @@ html{
 }
 
 main{
-    width: 80.375rem;
-    height: 47.5625rem;
-    margin: 0 auto;
+    width: 90rem;
+    height: 100%;
+    margin: 2rem 4rem;
     box-sizing: border-box;
 }

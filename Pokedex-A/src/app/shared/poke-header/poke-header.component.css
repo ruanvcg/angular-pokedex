@@ -1,0 +1,11 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+header, h1{
+    color: aliceblue;
+}
