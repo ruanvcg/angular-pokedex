@@ -4,6 +4,7 @@ form{
     align-items: center;
 
     background-color: var(--white);
+    border: 3px solid var(--secundary-color);
     border-radius: 20px;
 }
 

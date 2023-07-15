@@ -13,6 +13,8 @@ html{
 main{
     width: 95vw;
     height: 100%;
-    margin: 2rem 4rem;
+    margin: 2rem;
+    padding: 0 4rem;
+
     box-sizing: border-box;
 }
