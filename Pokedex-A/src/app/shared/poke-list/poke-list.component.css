@@ -69,19 +69,33 @@
         }
     }
     
-    @media (max-width: 870px){
+    @media (max-width: 870px) and (min-width: 541px){
 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .pokemon{
+            width: calc(80% - 2rem);
+            height: 18rem;
+            box-sizing: border-box;
+
+            margin: 2rem;
+            flex-direction: row;
+        }
+
+
+    }
+
+    @media (max-width: 541px){
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .pokemon{
-            width: 75%;
+            width: 80%;
             height: 17rem;
 
             margin: 2rem;
             flex-direction: column;
         }
-
-
     }
 }
