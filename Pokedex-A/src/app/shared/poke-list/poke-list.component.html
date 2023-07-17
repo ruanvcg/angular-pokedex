@@ -1,5 +1,5 @@
 <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
-    <a href="" class="pokemon" *ngIf="pokemon.status">
+    <a href="" class="pokemon" *ngIf="pokemon.status" [ngStyle]="getStyle(pokemon.status.types[0].type.name)">
         <section class="pokemon__status">
             <h2>{{ pokemon.name }}</h2>
             <h4>#{{ pokemon.status.id}}</h4>
