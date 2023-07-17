@@ -17,6 +17,8 @@ input{
     margin: 1rem;
     padding: 1rem;
 
+    background-color: var(--white);
+
     width: 100%;
 }
 
