@@ -1,5 +1,6 @@
 <h1 align="center">Pokedex</p>
 <img align="center" src="https://i.ibb.co/4MGBhT3/fghhg.png" width="700px">
+<h3 align="center"><a href="https://pokedex-nu-ebon.vercel.app/">Acesse a pokedex</a></h3>
 
 ## 💻 Tecnologias
 
@@ -7,6 +8,7 @@
 - HTML;
 - CSS;
 - Angular;
+- PokeAPI
 
 ## 🤝 Como contribuir?
 
