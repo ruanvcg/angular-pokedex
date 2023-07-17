@@ -8,6 +8,7 @@
 - HTML;
 - CSS;
 - Angular;
+- PokeAPI
 
 ## 🤝 Como contribuir?
 
