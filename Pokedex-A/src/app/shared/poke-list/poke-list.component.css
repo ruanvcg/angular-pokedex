@@ -20,8 +20,12 @@
         text-decoration: none;
         color: var(--white);
     }
-    
-    
+
+    .pokemon:hover .pokemon__image img {
+        transform: translateY(-15px);
+        transition: transform 0.3s ease;
+    }
+
     .pokemon__status h2{
         font-weight: bold;
         text-transform: capitalize;
