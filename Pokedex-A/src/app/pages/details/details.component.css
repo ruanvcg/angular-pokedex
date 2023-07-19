@@ -2,3 +2,7 @@
     display: block;
     margin: 0 auto;
 }
+
+.poke-details{
+    background-color: var(--white);
+}
