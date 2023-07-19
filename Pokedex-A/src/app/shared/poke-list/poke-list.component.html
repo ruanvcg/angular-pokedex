@@ -2,24 +2,25 @@
 
 <section class="pokelist">
     <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
-        <a [routerLink]="['details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status" [ngStyle]="getStyle(pokemon.status.types[0].type.name)">
+        <a [routerLink]="['details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status"
+            [ngStyle]="getStyle(pokemon.status.types[0].type.name)">
             <section class="pokemon__status">
                 <h2>{{ pokemon.name }}</h2>
                 <h4>#{{ pokemon.status.id}}</h4>
-        
+
                 <ul>
                     <li *ngFor="let value of pokemon.status.types">
                         {{ value.type.name }}
                     </li>
                 </ul>
             </section>
-        
+
             <section class="pokemon__image">
-                <img 
-                    [src]="pokemon.status.sprites.other.dream_world.front_default" 
-                    [alt]="pokemon.name"
-                >
+                <img [src]="pokemon.status.sprites.other.dream_world.front_default" [alt]="pokemon.name">
             </section>
         </a>
     </ng-template>
+
 </section>
+
+<img class="error" src="assets/error.png" alt="API Error." width="60%" *ngIf="apiError">

@@ -1,6 +1,10 @@
 .search{
     margin: 4rem;
 }
+.error{
+    display: block;
+    margin: 0 auto;
+}
 
 
 :host{
@@ -71,7 +75,7 @@
             right: 1.25rem;
             bottom: 1.25rem;
         }
-    
+        
         .pokemon__image img{
             width: 10rem;
             height: 10rem;

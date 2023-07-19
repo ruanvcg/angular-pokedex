@@ -18,6 +18,8 @@ export class DetailsComponent {
 
   public isLoading: boolean = false;
 
+  public apiError: boolean = false;
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private pokeApiService: PokeApiService
@@ -36,6 +38,11 @@ export class DetailsComponent {
       res => {
         this.pokemon = res;
         this.isLoading = true;
+
+        console.log(res)
+      },
+      error => {
+        this.apiError = true;
       }
     );
   }
@@ -46,6 +53,7 @@ export class DetailsComponent {
     switch (type) {
       case 'grass':
         style.backgroundColor = '#00CA69';
+        style.boxShadow = '0px 4px 10px 10px rgba(0, 202, 105, 0.60)';
         break;
       case 'fire':
         style.backgroundColor = '#D95308';

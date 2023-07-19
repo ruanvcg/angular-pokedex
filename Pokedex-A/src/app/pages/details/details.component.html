@@ -3,7 +3,7 @@
 <main class="poke-details">
 
     <ng-template [ngIf]="isLoading">
-        <section class="poke-details-header">
+        <section class="poke-details-header" [ngStyle]="getStyle(pokemon[0].types[0].type.name)">
             <div class="poke-details-header-title">
                 <h2>{{ pokemon[0].name }}</h2>
                 <h4>#{{pokemon[0].id}}</h4>
@@ -39,4 +39,13 @@
             Voltar
         </a>
     </ng-template>
+
+    <img
+        class="error"
+        src="assets/error.png" 
+        alt="API Error."
+        width="60%"
+        *ngIf="apiError"
+    >
+
 </main>
