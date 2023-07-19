@@ -1,6 +1,39 @@
-
 <poke-header></poke-header>
 
-<main>
-    
+<main class="poke-details">
+    <section class="poke-details-header">
+        <div class="poke-details-header-title">
+            <h2>{{ pokemon[0].name }}</h2>
+            <h4>#{{pokemon[0].id}}</h4>
+        </div>
+        <img [src]="pokemon[0].sprites.other.dream_world.front_default" [alt]="pokemon[0].name">
+    </section>
+
+    <section class="poke-details-info">
+        <div class="status">
+            <h2>Status:</h2>
+            <ol>
+                <li *ngFor="let value of pokemon[0].stats">
+                    {{ value.stat.name }}
+                    <strong>
+                        {{ value.base_stat }}
+                    </strong>
+                    <hr>
+                </li>
+            </ol>
+        </div>
+        <div class="habilits">
+            <h2>Habilidades:</h2>
+            <ng-container *ngFor="let value of pokemon[0].moves; let i = index">
+                <li *ngIf="i < 3">
+                    {{ value.move.name }}
+                    <hr>
+                </li>
+            </ng-container>
+        </div>
+    </section>
+
+    <a [routerLink]="['']" class="btn">
+        Voltar
+    </a>
 </main>
