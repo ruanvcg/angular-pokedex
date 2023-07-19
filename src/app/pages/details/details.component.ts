@@ -10,9 +10,9 @@ import { PokeApiService } from 'src/app/service/poke-api.service';
 })
 export class DetailsComponent {
 
-  private urlPokemon: string = 'https://pokeapi.co/api/v2/pokemon'
+  private urlPokemon: string = 'https://pokeapi.co/api/v2/pokemon';
 
-  private urlName: string = 'https://pokeapi.co/api/v2/pokemon-species'
+  private urlName: string = 'https://pokeapi.co/api/v2/pokemon-species';
 
   public pokemon: any;
 
