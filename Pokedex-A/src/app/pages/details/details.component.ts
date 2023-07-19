@@ -16,6 +16,8 @@ export class DetailsComponent {
 
   public pokemon: any;
 
+  public isLoading: boolean = false;
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private pokeApiService: PokeApiService
@@ -33,7 +35,7 @@ export class DetailsComponent {
     return forkJoin([pokemon, name]).subscribe(
       res => {
         this.pokemon = res;
-        console.log(res)
+        this.isLoading = true;
       }
     );
   }
