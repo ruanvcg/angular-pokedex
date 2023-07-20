@@ -47,6 +47,61 @@ export class DetailsComponent {
     );
   }
   
+  getStyleFont(type: string): any{
+    let style: any = {};
+
+    switch (type) {
+      case 'grass':
+        style.color = '#00CA69';
+        break;
+      case 'fire':
+        style.color = '#D95308';
+        break;
+      case 'electric':
+        style.color = '#FCC719';
+        break;
+      case 'water':
+        style.color = '#0881D9';
+        break;
+      case 'bug':
+        style.color = '#56AC54';
+        break;
+      case 'normal':
+        style.color = '#8D8D8D';
+        break;
+      case 'poison':
+        style.color = '#8122BB';
+        break;
+
+      case 'ghost':
+        style.color = '#8122BB';
+        break;
+
+      case 'fighting':
+        style.color = '#E23434';
+        break;
+
+      case 'psychic':
+        style.color = '#DC33CB';
+        break;
+
+      case 'rock':
+        style.color = '#937E4B';
+        break;
+
+      case 'ground':
+        style.color = '#D3C96A';
+        break;
+
+      case 'fairy':
+        style.color = '#F171E4';
+        break;
+      // Adicione outros casos para outros tipos de Pokémon
+      default:
+        style.color = 'transparent'; // Cor padrão se nenhum tipo correspondente for encontrado
+    }
+    return style;
+  }
 
   getStyle(type: string): any {
     let style: any = {};

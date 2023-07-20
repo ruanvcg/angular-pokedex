@@ -1,8 +1,151 @@
-.error{
+.error {
     display: block;
     margin: 0 auto;
 }
 
-.poke-details{
+.poke-name {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.poke-id {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.poke-details {
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
     background-color: var(--white);
+    border-radius: 20px;
+    width: 37vw;
+}
+
+.poke-details-header {
+    border-radius: 20px;
+}
+
+.poke-details-header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 15rem;
+}
+
+.poke-details-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.status h2{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+.habilits h2{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+.hr-main{
+    width: 15vw;
+    height: 1px; /* Increase the height to make it more visible */
+    margin: 0.5rem 0;
+    background-color: #000; /* Change the background color to black */
+    opacity: 100%;
+    border: none; /* Remove any default border */
+}
+
+hr {
+    width: 13vw;
+    height: 1px; /* Increase the height to make it more visible */
+    margin: 0.3rem 0;
+    background-color: #000; /* Change the background color to black */
+    opacity: 40%;
+    border: none; /* Remove any default border */
+}
+  
+
+li{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.btn{
+    margin: 0 auto;
+    padding: 1rem;
+    width: 15vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media (max-width: 870px) {
+    .poke-details {
+        width: 70vw;
+    }
+
+    .poke-name {
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        color: var(--white);
+    }
+    
+    .poke-id {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 0;
+        color: var(--white);
+    }
+
+    .poke-details-info {
+        padding: 1.5rem;
+    }
+
+    .status{
+        margin-right: 0.5rem;
+    }
+
+    .status h2{
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+    }
+    
+    .habilits h2{
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+    }
+
+    li{
+        list-style: none;
+        text-transform: capitalize;
+
+        font-size: 0.8rem;
+    }
 }
