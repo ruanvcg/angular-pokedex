@@ -1,6 +1,6 @@
 <h1 align="center">Pokedex</p>
 <img align="center" src="https://i.ibb.co/F6Z2T6J/hhf.png" width="700px">
-<h3 align="center"><a href="https://pokedex-nu-ebon.vercel.app/">Acesse a pokedex</a></h3>
+<h3 align="center"><a href="https://pokedex-beryl-nine-16.vercel.app/">Acesse a pokedex</a></h3>
 
 ## 💻 Tecnologias
 
