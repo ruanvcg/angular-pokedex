@@ -1,5 +1,8 @@
 <h1 align="center">Pokedex</p>
-<img align="center" src="https://i.ibb.co/F6Z2T6J/hhf.png" width="700px">
+<img align="center" src="desktopgif.gif" width="700px"><br>
+<img align="center" src="desktopgif-2.gif" width="700px"><br>
+<img align="center" src="mobilegif.gif" width="300px">
+<img align="center" src="mobilegif-2.gif" width="300px">
 <h3 align="center"><a href="https://pokedex-beryl-nine-16.vercel.app/">Acesse a pokedex</a></h3>
 
 ## 💻 Tecnologias
