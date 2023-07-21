@@ -4,7 +4,14 @@
     <ng-template [ngIf]="isLoading">
         <section class="poke-details-header" [ngStyle]="getStyle(pokemon[0].types[0].type.name)">
             <div class="poke-details-header-title">
-                <h2 class="poke-name">{{ pokemon[0].name }}</h2>
+                <div>
+                    <h2 class="poke-name">{{ pokemon[0].name }}</h2>
+                    <ul>
+                        <li *ngFor="let value of pokemon[0].types">
+                            {{ value.type.name }}
+                        </li>
+                    </ul>
+                </div>
                 <h4 class="poke-id">#{{pokemon[0].id}}</h4>
             </div>
             <img [src]="pokemon[0].sprites.other.dream_world.front_default" [alt]="pokemon[0].name">
@@ -49,3 +56,4 @@
     >
 
 </main>
+<div class="footer"></div>

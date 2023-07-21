@@ -13,7 +13,23 @@
 .poke-id {
     font-weight: 500;
     font-size: 1.5rem;
+    align-self: center;
     color: var(--white);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+}
+
+ul li{
+    margin: 0;
+    margin-right: 0.5rem;
+    padding: 4px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 20px;
 }
 
 .poke-details {
@@ -103,6 +119,10 @@ strong{
     color: var(--white);
 }
 
+.footer{
+    padding: 2rem;
+}
+
 @media (max-width: 870px) {
     .poke-details {
         width: 85vw;
@@ -118,6 +138,7 @@ strong{
     .poke-id {
         font-weight: 500;
         font-size: 1.3rem;
+        align-self: center;
         margin: 0;
         color: var(--white);
     }

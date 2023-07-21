@@ -96,6 +96,12 @@ export class DetailsComponent {
       case 'fairy':
         style.color = '#F171E4';
         break;
+      case 'dragon':
+        style.color = '#DF7336';
+        break;
+      case 'ice':
+        style.color = '#4FA3BD';
+        break;
       // Adicione outros casos para outros tipos de Pokémon
       default:
         style.color = 'transparent'; // Cor padrão se nenhum tipo correspondente for encontrado
@@ -164,6 +170,14 @@ export class DetailsComponent {
       case 'fairy':
         style.backgroundColor = '#F171E4';
         style.boxShadow = '0px 4px 10px 10px rgba(241, 113, 228, 0.60)';
+        break;
+      case 'dragon':
+        style.backgroundColor = '#DF7336';
+        style.boxShadow = '0px 4px 10px 10px rgba(223, 115, 54, 0.60)';
+        break;
+      case 'ice':
+        style.backgroundColor = '#4FA3BD';
+        style.boxShadow = '0px 4px 10px 10px rgba(79, 163, 189, 0.60)';
         break;
       // Adicione outros casos para outros tipos de Pokémon
       default:

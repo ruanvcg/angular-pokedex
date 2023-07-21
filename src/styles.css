@@ -20,6 +20,29 @@ main{
     box-sizing: border-box;
 }
 
+#btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#btnTop img{
+    position: relative;
+    width: 4rem;
+    height: 3rem;
+    opacity: 80%;
+}
+
 @media (max-width: 870px){
     main{
         padding: 0 1rem;

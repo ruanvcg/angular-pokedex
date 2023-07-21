@@ -13,10 +13,38 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Inter:wght@200;400;600;700;800&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet">
+
+
+  <!-- Scripts-->
+  <script src="https://kit.fontawesome.com/af233e75ce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <app-root></app-root>
+  <div id="btnTop">
+    <img src="assets/pokeball.png" alt="Pokeball button">
+  </div>
+  <script>
+    const btnTop = document.getElementById("btnTop");
+
+    btnTop.addEventListener("click", function () {
+      window.scrollTo(0, 0)
+    })
+
+    // Ocultar
+
+    document.addEventListener('scroll', ocultar)
+
+    function ocultar() {
+      if (window.scrollY > 10) {
+        btnTop.style.display = 'flex';
+      } else {
+        btnTop.style.display = 'none';
+      }
+    }
+
+    ocultar()
+  </script>
 </body>
 
 </html>
