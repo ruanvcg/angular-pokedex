@@ -62,7 +62,7 @@ img {
 .poke-details-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem;
 }
 
